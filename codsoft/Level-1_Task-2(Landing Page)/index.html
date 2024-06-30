@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css"> 
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<style>
+body {
+font-family: "Audiowide", sans-serif;
+}
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Center the loader */
+
+#loader {
+    position: absolute;
+  width: 85px;
+  height: 25px;
+  left: 45%;
+  top: 45%;
+
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#0000 90deg,#000000 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#000000 0);
+  background:var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l8 1s infinite;
+}
+#loader {
+    position: absolute;
+  width: 85px;
+  height: 25px;
+  left: 45%;
+  top: 45%;
+
+  --g1:conic-gradient(from  90deg at left   3px top   3px,#0000 90deg,#000000 0);
+  --g2:conic-gradient(from -90deg at bottom 3px right 3px,#0000 90deg,#000000 0);
+  background:var(--g1),var(--g1),var(--g1), var(--g2),var(--g2),var(--g2);
+  background-position: left,center,right;
+  background-repeat: no-repeat;
+  animation: l8 1s infinite;
+}
+
+
+@keyframes l8 {
+  0%   {background-size:25px 100%,25px 100%,25px 100%}
+  20%  {background-size:25px 50% ,25px 100%,25px 100%}
+  40%  {background-size:25px 50% ,25px 50% ,25px 100%}
+  60%  {background-size:25px 100%,25px 50% ,25px 50% }
+  80%  {background-size:25px 100%,25px 100%,25px 50% }
+  100% {background-size:25px 100%,25px 100%,25px 100%}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 0s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <header>
+        <h1>Farhan Web Services</h1>
+        <p>Your one-stop solution for all things web development</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="about" href="#about">About</a></li>
+            <li><a class="services" href="#services">Services</a></li>
+            <li><a class="portfolio" href="#portfolio">Portfolio</a></li>
+            <li><a class="contact" href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Amazon , IBM are old companies. And you are just an another number in thier long history. For my company , you will be one of my first customers and will be taken more seriously, more attention will be given with our all star team and will be in good hands. </p>
+        <p>So dont hesitate to approach.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="row">
+            <div class="column">
+                <h3>Web Development</h3>
+                <p>We build responsive and dynamic websites tailored to your needs.</p>
+            </div>
+            <div class="column">
+                <h3>Graphic Design</h3>
+                <p>Our design team creates stunning graphics and visuals for your brand.</p>
+            </div>
+            <div class="column">
+                <h3>SEO Optimization</h3>
+                <p>We optimize your site to rank higher in search engine results.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Our Achievements:-</h2>
+        <P>WE MADE:-
+        </P>
+        <div class="portfolio-item">
+            <img src="./images/project.png" alt="Project 1">
+            <p>Amazon Website:-</p>
+        </div>
+        <div class="portfolio-item">
+            <img src="./images/project2.png" alt="Project 2">
+            <p>Flipkart website:- </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: umarm8693@example.com</p>
+        <p>Phone: 354547890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+
+
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

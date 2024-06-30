@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<style>
+body {
+  font-family: "Trirong", serif;
+}
+/* Center the loader */
+#loader {
+position: absolute;
+  left: 48%;
+  top: 45%;
+  z-index: 1;
+  
+  width: 20px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: #000;
+  box-shadow: 0 0 0 0 #0004;
+  animation: l2 1.5s infinite linear;
+  
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: 0 0 0 0 #0004;
+  animation: inherit;
+  animation-delay: -0.5s;
+}
+.loader:after {
+  animation-delay: -1s;
+}
+@keyframes l2 {
+    100% {box-shadow: 0 0 0 40px #0000}
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 0s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;">
+
+<div id="loader"></div>
+
+<div style="display:none;" id="myDiv" class="animate-bottom">
+    <header>
+        <h1>Mohammed Farhanuddin</h1>
+        <p>Intern at Codsoft</p>
+    </header>
+
+    <section id="about">
+        <h2>About Myself:-</h2>
+        <img src="./images/651a82942e9abeceaa8d3d50_Employee-Surveys-Why-They-Are-An-Essential-Tool-For-Your-HR-Team.jpg" alt="Your Name">
+        <p>Hello! I'm Mohammed Farhanuddin, a passionate and driven Computer Science student at KITS, where I am currently in my 3rd year. My academic journey has equipped me with a strong foundation in programming languages such as Python, Java, and C++, as well as experience in web development using HTML, CSS, and JavaScript. I am particularly interested in software development and data science, areas where I have completed several challenging projects that have honed my problem-solving skills and attention to detail.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>PORTFOLIO</h3>
+            <img src="./images/project2.png" alt="Project 1">
+            <p>Header Section: Add your name or a logo at the top.
+                Optionally, include a brief introduction or tagline.
+                About Section: Insert an image of yourself.
+                
+                Write a short bio highlighting your skills and experience.
+                Skills Section: List your key skills or areas of expertise.
+                
+                Projects Section: Showcase samples of your work or projects.
+                
+                Include project titles, descriptions, and images.
+                
+                Resume Section: Provide a link to download your resume in PDF format.
+                
+                Contact Section: Include your contact information, such as email address and phone
+                
+                number.
+                
+                Footer: Add a copyright notice and any additional links or information.</p>
+        </div>
+        <div class="project">
+            <h3>LANDING PAGE</h3>
+            <img src="./images/project1.png" alt="Project 2">
+            <p>A landing page is an ideal web development project for beginners. It requires basic
+                knowledge of HTML and CSS. Through this project, you'll learn to create columns, divide
+                sections, arrange items, and add headers and footers. The most important aspect is
+                unleashing your creativity to design an impressive page. Pay attention to alignments,
+                padding, color palette, boxes, and other elements. Be mindful of CSS to avoid overlapping
+                
+                elements. In short, a landing page project allows you to apply HTML and CSS skills,
+                encouraging your creativity while ensuring a visually appealing and user-friendly design..</p>
+        </div>
+        <div class="project">
+            <h3>CALCULATOR</h3>
+            <img src="./images/project3.png" alt="Project 2">
+            <p>To create a basic calculator using CSS, HTML, and JavaScript, you'll need to implement an
+                interactive interface with buttons for addition, subtraction, multiplication, and division
+                operations. The calculator should have a display screen to show user input and results. Utilize
+                CSS grid system for button alignments. Use event listeners, if-else statements, operators, and
+                loops to handle user input and perform calculations. This project requires some skill but can be
+                
+                done with basic knowledge of these technologies..</p>
+        </div>
+    </section>
+
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="./images" download>Download My Resume</a>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: umarm8693@gmail.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </section>
+
+    <section id="contact">
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2024 All rights reserved.</p>
+    </footer>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

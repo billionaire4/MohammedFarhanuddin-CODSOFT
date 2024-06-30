@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 10;
+    padding: 10;
+    box-sizing: border-box;
+    background-color:wheat;
+    color:black;
+    text-align: center;
+}
+
+header {
+    background-color: black;
+    color: wheat;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+header p {
+    margin: 0.5em 0 0;
+    text-align: center;
+}
+
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+#about img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+h2 {
+    border-bottom: 2px solid #0c5882;
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: black;
+    color: wheat;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 2em;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+#resume a {
+    display: inline-block;
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background-color: black;
+    color: wheat;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#contact p {
+    margin: 0.5em 0;
+}
+
+footer {
+    background-color:black;
+    color:wheat;
+    text-align: center;
+    padding: 1em 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+  left: 0;
+  bottom: 0;
+}
